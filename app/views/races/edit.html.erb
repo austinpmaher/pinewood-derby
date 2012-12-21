@@ -1,0 +1,9 @@
+<h1>Race <%= @race.id %></h1>
+
+<p id="notice"><%= notice %></p>
+
+<%= render 'form' %>
+
+<%= link_to 'Previous', "/races/#{@race.id-1}/edit" %> |
+<%= link_to 'List', races_path %> | 
+<%= link_to 'Next', "/races/#{@race.id+1}/edit" %>

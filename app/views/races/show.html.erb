@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p><b>Left / Yellow Lane</b><br />
+  <%= @race.scout_1.name %>'s time = 
+  <%= @race.time1 %>
+</p>
+
+<p><b>Right / Blue Lane</b><br />
+  <%= @race.scout_2.name %>'s time =
+  <%= @race.time2 %>
+</p>
+
+<%= link_to 'Previous', "/races/#{@race.id-1}/edit" %> |
+<%= link_to 'Edit', edit_race_path(@race) %> |
+<%= link_to 'List', races_path %> | 
+<%= link_to 'Next', "/races/#{@race.id+1}/edit" %>

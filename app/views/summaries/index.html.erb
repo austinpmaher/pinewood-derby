@@ -1,0 +1,18 @@
+<h1>Race Summary</h1>
+
+<table>
+  <tr>
+    <th>Scout</th>
+    <th>Record</th>
+    <th>Time Differential</th>
+  </tr>
+
+<% @summaries.each do |summary| %>
+  <tr>
+    <td><%= summary.scout.name %></td>
+    <td><%= summary.wins %> - <%= summary.losses %></td>
+    <td><%= summary.differential %></td>
+  </tr>
+<% end %>
+</table>
+

@@ -1,0 +1,33 @@
+<%= form_for(@summary) do |f| %>
+  <% if @summary.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@summary.errors.count, "error") %> prohibited this summary from being saved:</h2>
+
+      <ul>
+      <% @summary.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :scout_id %><br />
+    <%= f.number_field :scout_id %>
+  </div>
+  <div class="field">
+    <%= f.label :wins %><br />
+    <%= f.number_field :wins %>
+  </div>
+  <div class="field">
+    <%= f.label :losses %><br />
+    <%= f.number_field :losses %>
+  </div>
+  <div class="field">
+    <%= f.label :differential %><br />
+    <%= f.number_field :differential %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

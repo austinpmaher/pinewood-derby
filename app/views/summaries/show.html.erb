@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Scout:</b>
+  <%= @summary.scout_id %>
+</p>
+
+<p>
+  <b>Wins:</b>
+  <%= @summary.wins %>
+</p>
+
+<p>
+  <b>Losses:</b>
+  <%= @summary.losses %>
+</p>
+
+<p>
+  <b>Differential:</b>
+  <%= @summary.differential %>
+</p>
+
+
+<%= link_to 'Edit', edit_summary_path(@summary) %> |
+<%= link_to 'Back', summaries_path %>

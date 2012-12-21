@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  heat: 1
+  scout_1_id: 1
+  scout_2_id: 1
+  time1: 1
+  time2: 1
+
+two:
+  heat: 1
+  scout_1_id: 1
+  scout_2_id: 1
+  time1: 1
+  time2: 1

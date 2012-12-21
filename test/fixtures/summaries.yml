@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  scout_id: 1
+  wins: 1
+  losses: 1
+  differential: 1
+
+two:
+  scout_id: 1
+  wins: 1
+  losses: 1
+  differential: 1
